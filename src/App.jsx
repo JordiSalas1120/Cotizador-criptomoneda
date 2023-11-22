@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import LogoImagen from './img/imagen-criptos.png';
+import Formulario from './components/Formulario';
 import './App.css';
 
 
@@ -40,12 +41,16 @@ const Contenedor = styled.div`
 function App() {
   return (
     <Contenedor>
-       <Logo
+        <Logo
         src={LogoImagen}
         alt="imagen criptomonedas"
-       />
-      <Heading>Cotiza el precio de tu criptomoneda favorita</Heading>
-     
+        />
+        <div>
+          <Heading>Cotiza el precio de tu criptomoneda favorita</Heading>
+          <Formulario/>
+        </div>
+      
+
     </Contenedor>
   );
 }
